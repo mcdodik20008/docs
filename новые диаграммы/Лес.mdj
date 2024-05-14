@@ -61,7 +61,7 @@
 											"font": "Arial;13;1",
 											"left": 301,
 											"top": 71,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "ServiceEntity"
 										},
@@ -75,9 +75,9 @@
 											"font": "Arial;13;0",
 											"left": 176,
 											"top": -656,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -96,7 +96,7 @@
 									"font": "Arial;13;0",
 									"left": 296,
 									"top": 64,
-									"width": 196.83056640625,
+									"width": 197.83056640625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCO7I7Q+3mk="
@@ -133,7 +133,7 @@
 											"font": "Arial;13;0",
 											"left": 301,
 											"top": 94,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "+nameFull: String",
 											"horizontalAlignment": 0
@@ -150,7 +150,7 @@
 											"font": "Arial;13;0",
 											"left": 301,
 											"top": 109,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "+nameShort: String",
 											"horizontalAlignment": 0
@@ -167,7 +167,7 @@
 											"font": "Arial;13;0",
 											"left": 301,
 											"top": 124,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "+activeFrom: LocalDate",
 											"horizontalAlignment": 0
@@ -184,7 +184,7 @@
 											"font": "Arial;13;0",
 											"left": 301,
 											"top": 139,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "+activeTo: LocalDate",
 											"horizontalAlignment": 0
@@ -201,7 +201,7 @@
 											"font": "Arial;13;0",
 											"left": 301,
 											"top": 154,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "+personEnabled: Boolean",
 											"horizontalAlignment": 0
@@ -218,7 +218,7 @@
 											"font": "Arial;13;0",
 											"left": 301,
 											"top": 169,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "+businessmanEnabled: Boolean",
 											"horizontalAlignment": 0
@@ -235,7 +235,7 @@
 											"font": "Arial;13;0",
 											"left": 301,
 											"top": 184,
-											"width": 186.83056640625,
+											"width": 187.83056640625,
 											"height": 13,
 											"text": "+companyEnabled: Boolean",
 											"horizontalAlignment": 0
@@ -244,7 +244,7 @@
 									"font": "Arial;13;0",
 									"left": 296,
 									"top": 89,
-									"width": 196.83056640625,
+									"width": 197.83056640625,
 									"height": 113
 								},
 								{
@@ -360,7 +360,7 @@
 											"font": "Arial;13;1",
 											"left": 21,
 											"top": 215,
-											"width": 132.62158203125,
+											"width": 133.62158203125,
 											"height": 13,
 											"text": "ReglamentEntity"
 										},
@@ -374,9 +374,9 @@
 											"font": "Arial;13;0",
 											"left": -368,
 											"top": -240,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -395,7 +395,7 @@
 									"font": "Arial;13;0",
 									"left": 16,
 									"top": 208,
-									"width": 142.62158203125,
+									"width": 143.62158203125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCTI4LSAdsE="
@@ -432,7 +432,7 @@
 											"font": "Arial;13;0",
 											"left": 21,
 											"top": 238,
-											"width": 132.62158203125,
+											"width": 133.62158203125,
 											"height": 13,
 											"text": "+name: String",
 											"horizontalAlignment": 0
@@ -449,7 +449,7 @@
 											"font": "Arial;13;0",
 											"left": 21,
 											"top": 253,
-											"width": 132.62158203125,
+											"width": 133.62158203125,
 											"height": 13,
 											"text": "+number: String",
 											"horizontalAlignment": 0
@@ -466,7 +466,7 @@
 											"font": "Arial;13;0",
 											"left": 21,
 											"top": 268,
-											"width": 132.62158203125,
+											"width": 133.62158203125,
 											"height": 13,
 											"text": "+beginDate: LocalDate",
 											"horizontalAlignment": 0
@@ -483,7 +483,7 @@
 											"font": "Arial;13;0",
 											"left": 21,
 											"top": 283,
-											"width": 132.62158203125,
+											"width": 133.62158203125,
 											"height": 13,
 											"text": "+endDate: LocalDate",
 											"horizontalAlignment": 0
@@ -500,7 +500,7 @@
 											"font": "Arial;13;0",
 											"left": 21,
 											"top": 298,
-											"width": 132.62158203125,
+											"width": 133.62158203125,
 											"height": 13,
 											"text": "+url: String",
 											"horizontalAlignment": 0
@@ -517,7 +517,7 @@
 											"font": "Arial;13;0",
 											"left": 21,
 											"top": 313,
-											"width": 132.62158203125,
+											"width": 133.62158203125,
 											"height": 13,
 											"text": "+info: String",
 											"horizontalAlignment": 0
@@ -526,7 +526,7 @@
 									"font": "Arial;13;0",
 									"left": 16,
 									"top": 233,
-									"width": 142.62158203125,
+									"width": 143.62158203125,
 									"height": 98
 								},
 								{
@@ -622,7 +622,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 180,
-									"top": 164,
+									"top": 165,
 									"width": 65.39990234375,
 									"height": 13,
 									"alpha": -1.6107754132792025,
@@ -645,7 +645,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 239,
-									"top": 227,
+									"top": 228,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -666,7 +666,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 220,
-									"top": 186,
+									"top": 187,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -684,7 +684,7 @@
 								"$ref": "AAAAAAGPbCO7IrQ8SAw="
 							},
 							"lineStyle": 1,
-							"points": "295:176;159:237",
+							"points": "295:177;160:237",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbCUB17TDyfk="
@@ -737,7 +737,7 @@
 											"font": "Arial;13;1",
 											"left": 197,
 											"top": 423,
-											"width": 137.642578125,
+											"width": 138.642578125,
 											"height": 13,
 											"text": "CauseEntity"
 										},
@@ -751,9 +751,9 @@
 											"font": "Arial;13;0",
 											"left": -144,
 											"top": -32,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -772,7 +772,7 @@
 									"font": "Arial;13;0",
 									"left": 192,
 									"top": 416,
-									"width": 147.642578125,
+									"width": 148.642578125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCZ/WbT25Gk="
@@ -809,7 +809,7 @@
 											"font": "Arial;13;0",
 											"left": 197,
 											"top": 446,
-											"width": 137.642578125,
+											"width": 138.642578125,
 											"height": 13,
 											"text": "+nameShort: String",
 											"horizontalAlignment": 0
@@ -826,7 +826,7 @@
 											"font": "Arial;13;0",
 											"left": 197,
 											"top": 461,
-											"width": 137.642578125,
+											"width": 138.642578125,
 											"height": 13,
 											"text": "+nameFull: String",
 											"horizontalAlignment": 0
@@ -843,7 +843,7 @@
 											"font": "Arial;13;0",
 											"left": 197,
 											"top": 476,
-											"width": 137.642578125,
+											"width": 138.642578125,
 											"height": 13,
 											"text": "+active: boolean",
 											"horizontalAlignment": 0
@@ -860,7 +860,7 @@
 											"font": "Arial;13;0",
 											"left": 197,
 											"top": 491,
-											"width": 137.642578125,
+											"width": 138.642578125,
 											"height": 13,
 											"text": "+activeFrom: LocalDate",
 											"horizontalAlignment": 0
@@ -877,7 +877,7 @@
 											"font": "Arial;13;0",
 											"left": 197,
 											"top": 506,
-											"width": 137.642578125,
+											"width": 138.642578125,
 											"height": 13,
 											"text": "+activeTo: LocalDate",
 											"horizontalAlignment": 0
@@ -886,7 +886,7 @@
 									"font": "Arial;13;0",
 									"left": 192,
 									"top": 441,
-									"width": 147.642578125,
+									"width": 148.642578125,
 									"height": 83
 								},
 								{
@@ -981,8 +981,8 @@
 										"$ref": "AAAAAAGPbCaei7UcndU="
 									},
 									"font": "Arial;13;0",
-									"left": 315,
-									"top": 257,
+									"left": 316,
+									"top": 258,
 									"width": 48.78173828125,
 									"height": 13,
 									"alpha": 1.3567904072661197,
@@ -1004,8 +1004,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 345,
-									"top": 253,
+									"left": 346,
+									"top": 255,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1025,7 +1025,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 307,
+									"left": 308,
 									"top": 230,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -1044,7 +1044,7 @@
 								"$ref": "AAAAAAGPbCO7IrQ8SAw="
 							},
 							"lineStyle": 1,
-							"points": "348:202;293:287",
+							"points": "349:203;294:287",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbCaei7Uf2GI="
@@ -1097,7 +1097,7 @@
 											"font": "Arial;13;1",
 											"left": 405,
 											"top": 313,
-											"width": 165.9326171875,
+											"width": 166.9326171875,
 											"height": 13,
 											"text": "List"
 										},
@@ -1111,9 +1111,9 @@
 											"font": "Arial;13;0",
 											"left": -272,
 											"top": -128,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -1132,7 +1132,7 @@
 									"font": "Arial;13;0",
 									"left": 400,
 									"top": 306,
-									"width": 175.9326171875,
+									"width": 176.9326171875,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCgzdLU4AaI="
@@ -1215,7 +1215,7 @@
 												"$ref": "AAAAAAGPbCtYYLXqrJg="
 											},
 											"font": "Arial;13;0",
-											"left": 444.82275390625,
+											"left": 445.82275390625,
 											"top": 293,
 											"width": 135.10986328125,
 											"height": 13,
@@ -1224,7 +1224,7 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 439.82275390625,
+									"left": 440.82275390625,
 									"top": 288,
 									"width": 145.10986328125,
 									"height": 23
@@ -1274,7 +1274,7 @@
 										"$ref": "AAAAAAGPbChBIbVfKHA="
 									},
 									"font": "Arial;13;0",
-									"left": 451,
+									"left": 450,
 									"top": 227,
 									"width": 71.1826171875,
 									"height": 13,
@@ -1298,7 +1298,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 482,
-									"top": 223,
+									"top": 224,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1319,7 +1319,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 442,
-									"top": 245,
+									"top": 246,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1337,7 +1337,7 @@
 								"$ref": "AAAAAAGPbCO7IrQ8SAw="
 							},
 							"lineStyle": 1,
-							"points": "432:202;480:287",
+							"points": "433:203;480:287",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbChBIbViBEQ="
@@ -1390,7 +1390,7 @@
 											"font": "Arial;13;1",
 											"left": 669,
 											"top": 305,
-											"width": 140.6689453125,
+											"width": 141.6689453125,
 											"height": 13,
 											"text": "List"
 										},
@@ -1404,9 +1404,9 @@
 											"font": "Arial;13;0",
 											"left": 208,
 											"top": -48,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -1425,7 +1425,7 @@
 									"font": "Arial;13;0",
 									"left": 664,
 									"top": 298,
-									"width": 150.6689453125,
+									"width": 151.6689453125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCotCbV2PDA="
@@ -1508,7 +1508,7 @@
 												"$ref": "AAAAAAGPbCt51rXzHnI="
 											},
 											"font": "Arial;13;0",
-											"left": 737.7490234375,
+											"left": 738.7490234375,
 											"top": 285,
 											"width": 80.919921875,
 											"height": 13,
@@ -1517,7 +1517,7 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 732.7490234375,
+									"left": 733.7490234375,
 									"top": 280,
 									"width": 90.919921875,
 									"height": 23
@@ -1568,7 +1568,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 587,
-									"top": 206,
+									"top": 207,
 									"width": 61.05810546875,
 									"height": 13,
 									"alpha": 1.103170303551023,
@@ -1611,8 +1611,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 588,
-									"top": 236,
+									"left": 589,
+									"top": 237,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1630,7 +1630,7 @@
 								"$ref": "AAAAAAGPbCO7IrQ8SAw="
 							},
 							"lineStyle": 1,
-							"points": "493:180;697:279",
+							"points": "494:181;698:279",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbCrRVLWho1M="
@@ -1683,7 +1683,7 @@
 											"font": "Arial;13;1",
 											"left": 205,
 											"top": 313,
-											"width": 140.6689453125,
+											"width": 141.6689453125,
 											"height": 13,
 											"text": "List"
 										},
@@ -1697,9 +1697,9 @@
 											"font": "Arial;13;0",
 											"left": -352,
 											"top": -464,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -1718,7 +1718,7 @@
 									"font": "Arial;13;0",
 									"left": 200,
 									"top": 306,
-									"width": 150.6689453125,
+									"width": 151.6689453125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCru4bW2b8o="
@@ -1801,7 +1801,7 @@
 												"$ref": "AAAAAAGPbCsIRbXcqSs="
 											},
 											"font": "Arial;13;0",
-											"left": 284.578125,
+											"left": 285.578125,
 											"top": 293,
 											"width": 70.0908203125,
 											"height": 13,
@@ -1810,7 +1810,7 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 279.578125,
+									"left": 280.578125,
 									"top": 288,
 									"width": 80.0908203125,
 									"height": 23
@@ -1881,7 +1881,7 @@
 											"font": "Arial;13;1",
 											"left": 429,
 											"top": 423,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "ServiceDocumentEntity"
 										},
@@ -1895,9 +1895,9 @@
 											"font": "Arial;13;0",
 											"left": -160,
 											"top": -224,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -1916,7 +1916,7 @@
 									"font": "Arial;13;0",
 									"left": 424,
 									"top": 416,
-									"width": 155.9326171875,
+									"width": 156.9326171875,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCuIkLX/Y84="
@@ -1953,7 +1953,7 @@
 											"font": "Arial;13;0",
 											"left": 429,
 											"top": 446,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+nameShort: String",
 											"horizontalAlignment": 0
@@ -1970,7 +1970,7 @@
 											"font": "Arial;13;0",
 											"left": 429,
 											"top": 461,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+nameFull: String",
 											"horizontalAlignment": 0
@@ -1987,7 +1987,7 @@
 											"font": "Arial;13;0",
 											"left": 429,
 											"top": 476,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+activeFrom: LocalDate",
 											"horizontalAlignment": 0
@@ -2004,7 +2004,7 @@
 											"font": "Arial;13;0",
 											"left": 429,
 											"top": 491,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+activeTo: LocalDate",
 											"horizontalAlignment": 0
@@ -2021,7 +2021,7 @@
 											"font": "Arial;13;0",
 											"left": 429,
 											"top": 506,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+notes: String",
 											"horizontalAlignment": 0
@@ -2038,7 +2038,7 @@
 											"font": "Arial;13;0",
 											"left": 429,
 											"top": 521,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+mandatory: boolean",
 											"horizontalAlignment": 0
@@ -2047,7 +2047,7 @@
 									"font": "Arial;13;0",
 									"left": 424,
 									"top": 441,
-									"width": 155.9326171875,
+									"width": 156.9326171875,
 									"height": 98
 								},
 								{
@@ -2163,7 +2163,7 @@
 											"font": "Arial;13;1",
 											"left": 669,
 											"top": 391,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "ProviderEntity"
 										},
@@ -2177,9 +2177,9 @@
 											"font": "Arial;13;0",
 											"left": 48,
 											"top": -144,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -2198,7 +2198,7 @@
 									"font": "Arial;13;0",
 									"left": 664,
 									"top": 384,
-									"width": 155.9326171875,
+									"width": 156.9326171875,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbCuPvLYoYL8="
@@ -2235,7 +2235,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 414,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+nameFull: String",
 											"horizontalAlignment": 0
@@ -2252,7 +2252,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 429,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+nameShort: String",
 											"horizontalAlignment": 0
@@ -2269,7 +2269,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 444,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+inn: String",
 											"horizontalAlignment": 0
@@ -2286,7 +2286,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 459,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+kpp: String",
 											"horizontalAlignment": 0
@@ -2303,7 +2303,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 474,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+ogrn: String",
 											"horizontalAlignment": 0
@@ -2320,7 +2320,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 489,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+addressLegal: String",
 											"horizontalAlignment": 0
@@ -2337,7 +2337,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 504,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+addressPostal: String",
 											"horizontalAlignment": 0
@@ -2354,7 +2354,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 519,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+position: String",
 											"horizontalAlignment": 0
@@ -2371,7 +2371,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 534,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+fio: String",
 											"horizontalAlignment": 0
@@ -2388,7 +2388,7 @@
 											"font": "Arial;13;0",
 											"left": 669,
 											"top": 549,
-											"width": 145.9326171875,
+											"width": 146.9326171875,
 											"height": 13,
 											"text": "+contact: String",
 											"horizontalAlignment": 0
@@ -2397,7 +2397,7 @@
 									"font": "Arial;13;0",
 									"left": 664,
 									"top": 409,
-									"width": 155.9326171875,
+									"width": 156.9326171875,
 									"height": 158
 								},
 								{
@@ -2493,7 +2493,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 287,
+									"left": 288,
 									"top": 368,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2514,7 +2514,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 302,
+									"left": 303,
 									"top": 369,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2535,7 +2535,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 258,
+									"left": 259,
 									"top": 365,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -2554,7 +2554,7 @@
 								"$ref": "AAAAAAGPbCru4bW0fIU="
 							},
 							"lineStyle": 1,
-							"points": "277:331;270:415",
+							"points": "278:332;270:415",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbCvTPLZYHXk="
@@ -2648,7 +2648,7 @@
 								"$ref": "AAAAAAGPbCgzdLU2qVM="
 							},
 							"lineStyle": 1,
-							"points": "493:331;498:415",
+							"points": "493:332;498:415",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbCvcdbZp7GM="
@@ -2681,7 +2681,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 756,
+									"left": 757,
 									"top": 346,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2702,7 +2702,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 771,
+									"left": 772,
 									"top": 346,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2723,7 +2723,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 727,
+									"left": 728,
 									"top": 347,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -2742,7 +2742,7 @@
 								"$ref": "AAAAAAGPbCotCbV0uZY="
 							},
 							"lineStyle": 1,
-							"points": "743:323;742:383",
+							"points": "744:324;743:383",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbCvkFLZ6Lkk="
@@ -2783,7 +2783,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 645,
-											"width": 167.49658203125,
+											"width": 168.49658203125,
 											"height": 13,
 											"text": "«enumeration»"
 										},
@@ -2796,7 +2796,7 @@
 											"font": "Arial;13;1",
 											"left": 525,
 											"top": 660,
-											"width": 167.49658203125,
+											"width": 168.49658203125,
 											"height": 13,
 											"text": "DocumentCategory"
 										},
@@ -2810,9 +2810,9 @@
 											"font": "Arial;13;0",
 											"left": 176,
 											"top": -80,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -2831,7 +2831,7 @@
 									"font": "Arial;13;0",
 									"left": 520,
 									"top": 640,
-									"width": 177.49658203125,
+									"width": 178.49658203125,
 									"height": 38,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbDZNKLedqRI="
@@ -2932,7 +2932,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 683,
-											"width": 167.49658203125,
+											"width": 168.49658203125,
 											"height": 13,
 											"text": "PROVIDE_OPERATOR",
 											"horizontalAlignment": 0
@@ -2949,7 +2949,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 698,
-											"width": 167.49658203125,
+											"width": 168.49658203125,
 											"height": 13,
 											"text": "PROVIDE",
 											"horizontalAlignment": 0
@@ -2966,7 +2966,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 713,
-											"width": 167.49658203125,
+											"width": 168.49658203125,
 											"height": 13,
 											"text": "FINAL_TRUE",
 											"horizontalAlignment": 0
@@ -2983,7 +2983,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 728,
-											"width": 167.49658203125,
+											"width": 168.49658203125,
 											"height": 13,
 											"text": "FINAL_FALSE",
 											"horizontalAlignment": 0
@@ -3000,7 +3000,7 @@
 											"font": "Arial;13;0",
 											"left": 525,
 											"top": 743,
-											"width": 167.49658203125,
+											"width": 168.49658203125,
 											"height": 13,
 											"text": "OTHER",
 											"horizontalAlignment": 0
@@ -3009,7 +3009,7 @@
 									"font": "Arial;13;0",
 									"left": 520,
 									"top": 678,
-									"width": 177.49658203125,
+									"width": 178.49658203125,
 									"height": 83
 								}
 							],
@@ -3123,7 +3123,7 @@
 								"$ref": "AAAAAAGPbCuIkLX9pAo="
 							},
 							"lineStyle": 1,
-							"points": "531:539;578:639",
+							"points": "531:540;578:639",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbDbTjLfMUEs="
@@ -3176,7 +3176,7 @@
 											"font": "Arial;13;1",
 											"left": 261,
 											"top": 647,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "StoredFileEntity"
 										},
@@ -3190,9 +3190,9 @@
 											"font": "Arial;13;0",
 											"left": 80,
 											"top": -144,
-											"width": 73.67724609375,
+											"width": 77.93017578125,
 											"height": 13,
-											"text": "(from Model)"
+											"text": "(from Услуга)"
 										},
 										{
 											"_type": "LabelView",
@@ -3211,7 +3211,7 @@
 									"font": "Arial;13;0",
 									"left": 256,
 									"top": 640,
-									"width": 197.2431640625,
+									"width": 198.2431640625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbDoOxLhEX50="
@@ -3248,7 +3248,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 670,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+name: String",
 											"horizontalAlignment": 0
@@ -3265,7 +3265,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 685,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+filePath: String",
 											"horizontalAlignment": 0
@@ -3282,7 +3282,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 700,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+format: String",
 											"horizontalAlignment": 0
@@ -3299,7 +3299,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 715,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+size: int",
 											"horizontalAlignment": 0
@@ -3316,7 +3316,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 730,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+fileHash: String",
 											"horizontalAlignment": 0
@@ -3333,7 +3333,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 745,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+deleted: boolean",
 											"horizontalAlignment": 0
@@ -3350,7 +3350,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 760,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+orderNumber: Integer",
 											"horizontalAlignment": 0
@@ -3367,7 +3367,7 @@
 											"font": "Arial;13;0",
 											"left": 261,
 											"top": 775,
-											"width": 187.2431640625,
+											"width": 188.2431640625,
 											"height": 13,
 											"text": "+lastCheckTime: LocalDateTime",
 											"horizontalAlignment": 0
@@ -3376,7 +3376,7 @@
 									"font": "Arial;13;0",
 									"left": 256,
 									"top": 665,
-									"width": 197.2431640625,
+									"width": 198.2431640625,
 									"height": 128
 								},
 								{
@@ -3471,8 +3471,8 @@
 										"$ref": "AAAAAAGPbDou2rhqb0A="
 									},
 									"font": "Arial;13;0",
-									"left": 293,
-									"top": 562,
+									"left": 292,
+									"top": 564,
 									"width": 78.39990234375,
 									"height": 13,
 									"alpha": -1.2156321184372882,
@@ -3494,7 +3494,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 457,
+									"left": 456,
 									"top": 598,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -3515,7 +3515,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 419,
+									"left": 418,
 									"top": 575,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -3534,7 +3534,7 @@
 								"$ref": "AAAAAAGPbCuIkLX9pAo="
 							},
 							"lineStyle": 1,
-							"points": "463:539;401:639",
+							"points": "462:540;401:639",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGPbDou2rhtH9k="
@@ -4314,7 +4314,7 @@
 											"font": "Arial;13;1",
 											"left": 453,
 											"top": 263,
-											"width": 87.40087890625,
+											"width": 88.40087890625,
 											"height": 13,
 											"text": "RequestEntity"
 										},
@@ -4349,7 +4349,7 @@
 									"font": "Arial;13;0",
 									"left": 448,
 									"top": 256,
-									"width": 97.40087890625,
+									"width": 98.40087890625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGPbEHUErlP/bc="
@@ -4376,7 +4376,7 @@
 									"font": "Arial;13;0",
 									"left": 448,
 									"top": 281,
-									"width": 97.40087890625,
+									"width": 98.40087890625,
 									"height": 10
 								},
 								{
@@ -4391,7 +4391,7 @@
 									"font": "Arial;13;0",
 									"left": 448,
 									"top": 291,
-									"width": 97.40087890625,
+									"width": 98.40087890625,
 									"height": 10
 								},
 								{
