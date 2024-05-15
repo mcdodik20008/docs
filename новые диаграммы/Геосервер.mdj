@@ -240,8 +240,8 @@
 												"$ref": "AAAAAAGPe1rdYGVnYzY="
 											},
 											"font": "Arial;13;0",
-											"left": 237,
-											"top": 69,
+											"left": 125,
+											"top": 29,
 											"width": 106.45361328125,
 											"height": 13,
 											"text": "«information»"
@@ -253,11 +253,11 @@
 												"$ref": "AAAAAAGPe1rdYGVnYzY="
 											},
 											"font": "Arial;13;1",
-											"left": 237,
-											"top": 84,
+											"left": 125,
+											"top": 44,
 											"width": 106.45361328125,
 											"height": 13,
-											"text": "InformationItem1"
+											"text": "Запрос карты"
 										},
 										{
 											"_type": "LabelView",
@@ -267,8 +267,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -176,
-											"top": -688,
+											"left": -400,
+											"top": -768,
 											"width": 80.9072265625,
 											"height": 13,
 											"text": "(from Model1)"
@@ -281,15 +281,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -176,
-											"top": -688,
+											"left": -400,
+											"top": -768,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 232,
-									"top": 64,
+									"left": 120,
+									"top": 24,
 									"width": 116.45361328125,
 									"height": 38,
 									"stereotypeLabel": {
@@ -325,8 +325,8 @@
 												"$ref": "AAAAAAGPe2G6omZ+1KA="
 											},
 											"font": "Arial;13;0",
-											"left": 237,
-											"top": 107,
+											"left": 125,
+											"top": 67,
 											"width": 106.45361328125,
 											"height": 13,
 											"text": "+request: String",
@@ -342,8 +342,8 @@
 												"$ref": "AAAAAAGPe2IhwWaJLow="
 											},
 											"font": "Arial;13;0",
-											"left": 237,
-											"top": 122,
+											"left": 125,
+											"top": 82,
 											"width": 106.45361328125,
 											"height": 13,
 											"text": "+format: String",
@@ -359,8 +359,8 @@
 												"$ref": "AAAAAAGPe2JY9maQ8tk="
 											},
 											"font": "Arial;13;0",
-											"left": 237,
-											"top": 137,
+											"left": 125,
+											"top": 97,
 											"width": 106.45361328125,
 											"height": 13,
 											"text": "+layers: String",
@@ -376,8 +376,8 @@
 												"$ref": "AAAAAAGPe2MiiGaXiXI="
 											},
 											"font": "Arial;13;0",
-											"left": 237,
-											"top": 152,
+											"left": 125,
+											"top": 112,
 											"width": 106.45361328125,
 											"height": 13,
 											"text": "+width: Integer",
@@ -393,8 +393,8 @@
 												"$ref": "AAAAAAGPe2NB8GaeaKM="
 											},
 											"font": "Arial;13;0",
-											"left": 237,
-											"top": 167,
+											"left": 125,
+											"top": 127,
 											"width": 106.45361328125,
 											"height": 13,
 											"text": "+height: Integer",
@@ -410,8 +410,8 @@
 												"$ref": "AAAAAAGPe2Nr2GamhHU="
 											},
 											"font": "Arial;13;0",
-											"left": 237,
-											"top": 182,
+											"left": 125,
+											"top": 142,
 											"width": 106.45361328125,
 											"height": 13,
 											"text": "+bbox: String",
@@ -419,8 +419,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 232,
-									"top": 102,
+									"left": 120,
+									"top": 62,
 									"width": 116.45361328125,
 									"height": 98
 								},
@@ -435,8 +435,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 232,
-									"top": 112,
+									"left": 120,
+									"top": 72,
 									"width": 116.45361328125,
 									"height": 10
 								},
@@ -451,8 +451,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -88,
-									"top": -344,
+									"left": -200,
+									"top": -384,
 									"width": 10,
 									"height": 10
 								},
@@ -467,16 +467,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -88,
-									"top": -344,
+									"left": -200,
+									"top": -384,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 232,
-							"top": 64,
+							"left": 120,
+							"top": 24,
 							"width": 115.45361328125,
 							"height": 136,
 							"nameCompartment": {
@@ -1021,12 +1021,12 @@
 										"$ref": "AAAAAAGPe2BFrGZqh6A="
 									},
 									"font": "Arial;13;0",
-									"left": 422,
-									"top": 218,
+									"left": 375,
+									"top": 224,
 									"width": 87.8388671875,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
+									"alpha": -3.7758830236612324,
+									"distance": 53.600373133029585,
 									"hostEdge": {
 										"$ref": "AAAAAAGPe2BFrGZstLU="
 									},
@@ -1043,12 +1043,12 @@
 										"$ref": "AAAAAAGPe2BFrGZqh6A="
 									},
 									"font": "Arial;13;0",
-									"left": 440,
-									"top": 205,
+									"left": 392,
+									"top": 207,
 									"width": 37.578125,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 30,
+									"alpha": -3.995404251215148,
+									"distance": 66.48308055437865,
 									"hostEdge": {
 										"$ref": "AAAAAAGPe2BFrGZstLU="
 									},
@@ -1105,7 +1105,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGPe1rXrmVfssE="
 					},
-					"name": "InformationItem1",
+					"name": "Запрос карты",
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
