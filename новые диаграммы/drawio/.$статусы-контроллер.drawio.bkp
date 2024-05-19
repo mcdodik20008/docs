@@ -1,0 +1,192 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="none" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="node3" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DtoMapper&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- mapper: DefaultModelMapper&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ map(Object, Object, MappingParameters): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="207" y="-282" width="293" height="83" as="geometry" />
+    </mxCell>
+    <mxCell id="node1" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;EntityMapper&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- stringToUuidMapper: StringToUuidMapper&lt;br/&gt;- stringToLongMapper: StringToLongMapper&lt;br/&gt;- logger: Logger&lt;br/&gt;- entityManager: SimpleJPAEntityManager&lt;br/&gt;- typeService: EntityTypeService&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- getDtoValue(Object, String): Object?&lt;br/&gt;- convertToEntity(Object, EntityType&amp;lt;?&amp;gt;, CascadeType[], MappingParameters): Object&lt;br/&gt;+ map(Object, Class&amp;lt;T&amp;gt;, MappingParameters): T&lt;br/&gt;- checkAnyCascade(CascadeType[], CascadeType[]): boolean&lt;br/&gt;- mapAtributes(Object, Object, EntityType&amp;lt;?&amp;gt;, MappingParameters): void&lt;br/&gt;- checkAndConvertValue(Object, Class, MappingParameters): Object&lt;br/&gt;+ map(Object, Object, MappingParameters): void&lt;br/&gt;- convertToEntityCollection(Object, EntityAttribute, MappingParameters): Collection&amp;lt;Object&amp;gt;&lt;br/&gt;- getReference(Object, EntityType&amp;lt;?&amp;gt;, MappingParameters): Object&lt;br/&gt;- getDtoValue(Object, Field): Object&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-426" y="-79" width="460" height="363" as="geometry" />
+    </mxCell>
+    <mxCell id="node2" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ObjectPermissionsService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- privilegeRepository: PrivilegeRepository&lt;br/&gt;- roleRepository: RoleRepository&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ updateRolePermissionsForObject(PrivilegeCategory, Long, Long, Integer): void&lt;br/&gt;+ checkPermission(Integer, PermissionType): boolean&lt;br/&gt;- removePrivilege(Set&amp;lt;PrivilegeEntity&amp;gt;, PrivilegeEntity): void&lt;br/&gt;+ removePermissionsForObject(PrivilegeCategory, Long): void&lt;br/&gt;+ removeRolePermissionsForObject(PrivilegeCategory, Long, Long): void&lt;br/&gt;+ getPermissionsForObject(PrivilegeCategory, Long): Map&amp;lt;RoleEntity, Integer&amp;gt;&lt;br/&gt;- checkPrivilege(Set&amp;lt;PrivilegeEntity&amp;gt;, PrivilegeEntity): boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="670" y="-67" width="450" height="231" as="geometry" />
+    </mxCell>
+    <mxCell id="node6" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RequestService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- statusService: StatusService&lt;br/&gt;- scriptCheckService: GroovyScriptService&lt;br/&gt;- calendarService: WorkdayCalendarService&lt;br/&gt;- requestRepository: RequestRepository&lt;br/&gt;- statusRequestSectionRepository: StatusRequestSectionRepository&lt;br/&gt;- gisObjectEntityEventListener: GisObjectEntityEventListener&lt;br/&gt;- notificationService: UserNotificationService&lt;br/&gt;- userRepository: UserRepository&lt;br/&gt;- serviceRepository: ServiceRepository&lt;br/&gt;- logger: Logger&lt;br/&gt;- scriptEventListener: ScriptEventListener&lt;br/&gt;- providerRepository: ProviderRepository&lt;br/&gt;- documentEntityEventListener: DocumentEntityEventListener&lt;br/&gt;- requestDocumentRepository: RequestDocumentRepository&lt;br/&gt;- departmentRepository: DepartmentRepository&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getForbiddenSections(RequestEntity): Map&amp;lt;String, Integer&amp;gt;&lt;br/&gt;+ checkAccess(RequestEntity, PermissionType, SystemUser): boolean&lt;br/&gt;+ changeStatus(RequestEntity, Long, Boolean): void&lt;br/&gt;+ findAll(EntityCondition, SortFields, LimitOffset): List&amp;lt;RequestEntity&amp;gt;&lt;br/&gt;+ count(RequestRegistryEnum, StatusStageEnum, EntityCondition): int&lt;br/&gt;- registerListeners(): void&lt;br/&gt;- getCalculatedStartDate(RequestEntity, ServiceDurationEntity): LocalDate&lt;br/&gt;- getWorkDayPeriod(LocalDate, int): List&amp;lt;LocalDate&amp;gt;&lt;br/&gt;+ getByRegisterNumber(String): RequestEntity&lt;br/&gt;+ checkAccess(RequestEntity, PermissionType): boolean&lt;br/&gt;- findUserRequests(LimitOffset, EntityCondition, SortFields, RequestRegistryEnum, StatusStageEnum): List&amp;lt;RequestEntity&amp;gt;&lt;br/&gt;+ setDefaultStatus(RequestEntity): void&lt;br/&gt;+ checkAccessForSection(StatusRequestSectionEntity, PermissionType, UserEntity, SystemUser): boolean&lt;br/&gt;- getServiceConditions(SystemUser): EntityCondition&lt;br/&gt;- deleteOldFinalRequestDocuments(RequestEntity): void&lt;br/&gt;+ checkAccessForSection(RequestEntity, RequestSection, PermissionType): boolean&lt;br/&gt;+ deleteById(Long): void&lt;br/&gt;- getStatusConditions(RequestRegistryEnum, SystemUser, UserEntity): EntityCondition?&lt;br/&gt;+ changeStatus(RequestEntity, Long, Boolean, Boolean): void&lt;br/&gt;+ calculateByWorkingDays(RequestEntity, ServiceDurationEntity): void&lt;br/&gt;+ delete(RequestEntity): void&lt;br/&gt;- check(ServiceEntity, String, Map&amp;lt;String, Object&amp;gt;): List&amp;lt;String&amp;gt;&lt;br/&gt;+ checkRequest(RequestEntity): List&amp;lt;String&amp;gt;&lt;br/&gt;- getConditionsForRegistry(EntityCondition, RequestRegistryEnum, StatusStageEnum): EntityCondition&lt;br/&gt;+ checkAccessForStatusPath(StatusPathEntity, PermissionType, UserEntity, SystemUser): boolean&lt;br/&gt;+ getById(Long): RequestEntity&lt;br/&gt;+ countByServiceId(Long): int&lt;br/&gt;+ getForbidden(RequestEntity): Integer&lt;br/&gt;- getProviderConditions(SystemUser): EntityCondition&lt;br/&gt;+ checkAccessForStatus(StatusEntity, PermissionType, UserEntity, SystemUser): boolean&lt;br/&gt;+ findByDocumentId(UUID): RequestEntity&lt;br/&gt;- getHolidaysByPeriod(LocalDate, int): List&amp;lt;LocalDate&amp;gt;&lt;br/&gt;+ checkAccessForService(ServiceEntity, PermissionType, PrivilegeContainer): boolean&lt;br/&gt;+ saveAndFlush(RequestEntity): RequestEntity&lt;br/&gt;+ calculateEndDate(RequestEntity): void&lt;br/&gt;- getResultConditions(RequestRegistryEnum): EntityCondition?&lt;br/&gt;+ calculateByCalendarDays(RequestEntity, ServiceDurationEntity): void&lt;br/&gt;- calculateFactTime(RequestEntity): void&lt;br/&gt;+ checkAccessForDepartment(DepartmentEntity, PermissionType, SystemUser): boolean&lt;br/&gt;- getUserConditions(UserEntity): EntityCondition&lt;br/&gt;+ getByRegisterNumberAndRegisterDate(String, LocalDate): RequestEntity&lt;br/&gt;- getStageConditions(StatusStageEnum): EntityCondition&lt;br/&gt;+ getRequestDocuments(Long): List&amp;lt;RequestDocumentEntity&amp;gt;&lt;br/&gt;+ checkAccessForProvider(ProviderEntity, PermissionType, SystemUser): boolean&lt;br/&gt;+ save(RequestEntity): RequestEntity&lt;br/&gt;- invokeScriptToSave(RequestEntity, GroovyScriptMethodEnum): void&lt;br/&gt;- getDepartmentConditions(SystemUser): EntityCondition&lt;br/&gt;+ count(EntityCondition): int&lt;br/&gt;+ getRequestDocuments(Long, EntityCondition, SortFields, LimitOffset): List&amp;lt;RequestDocumentEntity&amp;gt;&lt;br/&gt;+ existByRegNumber(RequestEntity, String): boolean&lt;br/&gt;+ getRequests(RequestRegistryEnum, StatusStageEnum, EntityCondition, SortFields, LimitOffset): List&amp;lt;RequestEntity&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="42" y="565" width="516" height="1485" as="geometry" />
+    </mxCell>
+    <mxCell id="node4" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StatusController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- statusService: StatusService&lt;br/&gt;- requestService: RequestService&lt;br/&gt;- entityMapper: EntityMapper&lt;br/&gt;- dtoMapper: DtoMapper&lt;br/&gt;- statusRequestSectionRepository: StatusRequestSectionRepository&lt;br/&gt;- statusHistoryRepository: StatusHistoryRepository&lt;br/&gt;- objectPermissionsService: ObjectPermissionsService&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ createStatusRequestSectionsRights(Long, Long, Long, RolePermissionsDTO): RolePermissionsDTO&lt;br/&gt;+ createStatusRequestSectionsRights(Long, Long, RolePermissionsDTO): RolePermissionsDTO&lt;br/&gt;+ createStatus(StatusDTO): StatusDTO&lt;br/&gt;- updateStatusRights(Long, RolePermissionsDTO): RolePermissionsDTO&lt;br/&gt;+ createStatusRequestSections(Long, StatusRequestSectionDTO): StatusRequestSectionDTO&lt;br/&gt;+ getStatusRights(Long): List&amp;lt;RolePermissionsDTO&amp;gt;&lt;br/&gt;+ updateStatusRights(Long, Long, RolePermissionsDTO): RolePermissionsDTO&lt;br/&gt;+ removeStatusRequestSectionsRights(Long, Long, Long): void&lt;br/&gt;+ getStatusRequestSections(Long): List&amp;lt;StatusRequestSectionDTO&amp;gt;&lt;br/&gt;+ updateStatusRequestSections(Long, Long, StatusRequestSectionDTO): StatusRequestSectionDTO&lt;br/&gt;+ updateStatus(Long, StatusDTO): StatusDTO&lt;br/&gt;+ getStatusesByRequest(Long): List&amp;lt;StatusHistoryDTO&amp;gt;&lt;br/&gt;+ removeStatusRights(Long, Long): void&lt;br/&gt;+ deleteStatusRequestSections(Long, Long): void&lt;br/&gt;+ createStatusRights(Long, RolePermissionsDTO): RolePermissionsDTO&lt;br/&gt;+ deleteStatus(Long): void&lt;br/&gt;- getStatusRequestSectionEntity(Long): StatusRequestSectionEntity&lt;br/&gt;- getStatusEntity(Long): StatusEntity&lt;br/&gt;+ allStatus(LimitOffset, EntityCondition, SortFields): ResponseListDTO&amp;lt;StatusDTO&amp;gt;&lt;br/&gt;+ getStatusRequestSectionsRights(Long, Long): List&amp;lt;RolePermissionsDTO&amp;gt;&lt;br/&gt;- updateStatusRequestSectionsRights(Long, Long, RolePermissionsDTO): RolePermissionsDTO&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="95" y="-144" width="515" height="649" as="geometry" />
+    </mxCell>
+    <mxCell id="node0" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StatusHistoryRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ findByRequest(RequestEntity): List&amp;lt;StatusHistoryEntity&amp;gt;&lt;br/&gt;+ getEntityClass(): Class&amp;lt;StatusHistoryEntity&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="618" y="924" width="338" height="82" as="geometry" />
+    </mxCell>
+    <mxCell id="node5" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StatusRequestSectionRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getEntityClass(): Class&amp;lt;StatusRequestSectionEntity&amp;gt;&lt;br/&gt;+ findByStatus(Long): List&amp;lt;StatusRequestSectionEntity&amp;gt;&lt;br/&gt;+ findByStatusAndSection(Long, Integer): StatusRequestSectionEntity&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-362" y="370" width="396" height="106" as="geometry" />
+    </mxCell>
+    <mxCell id="node7" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;StatusService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- scriptCheckService: GroovyScriptService&lt;br/&gt;- statusHistoryRepository: StatusHistoryRepository&lt;br/&gt;- serviceRepository: ServiceRepository&lt;br/&gt;- scriptEventListener: ScriptEventListener&lt;br/&gt;- statusPathRepository: StatusPathRepository&lt;br/&gt;- statusRepository: StatusRepository&lt;br/&gt;- requestRepository: RequestRepository&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- getAllStatusesFromGroup(StatusGroupEntity): List&amp;lt;StatusEntity&amp;gt;&lt;br/&gt;- registerListeners(): void&lt;br/&gt;+ findByName(String): StatusEntity&lt;br/&gt;+ getStatusPathsByService(Long): List&amp;lt;StatusPathEntity&amp;gt;&lt;br/&gt;+ getStatusPath(Long, Long, Long): StatusPathEntity&lt;br/&gt;+ findById(Long): StatusEntity&lt;br/&gt;+ findAll(EntityCondition, SortFields, LimitOffset): List&amp;lt;StatusEntity&amp;gt;&lt;br/&gt;- countRequestByStatusId(Long): int&lt;br/&gt;+ count(EntityCondition): int&lt;br/&gt;- getStatusGroupByService(Long): StatusGroupEntity&lt;br/&gt;- check(StatusPathEntity, String, Map&amp;lt;String, Object&amp;gt;): List&amp;lt;String&amp;gt;&lt;br/&gt;+ delete(Long): void&lt;br/&gt;+ checkBeforeSave(RequestEntity, StatusPathEntity, Boolean, UserEntity): List&amp;lt;String&amp;gt;&lt;br/&gt;+ update(StatusEntity): StatusEntity&lt;br/&gt;+ create(StatusEntity): StatusEntity&lt;br/&gt;+ getStatusesByService(Long): List&amp;lt;StatusEntity&amp;gt;&lt;br/&gt;+ findAll(): List&amp;lt;StatusEntity&amp;gt;&lt;br/&gt;+ addStatusHistory(RequestEntity, UserEntity): void&lt;br/&gt;+ doAfterStatusChange(RequestEntity, StatusPathEntity): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="674" y="251" width="419" height="605" as="geometry" />
+    </mxCell>
+    <mxCell id="edge5" edge="1" value="" parent="1" source="node6" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=1.000;entryY=0.500;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="300" y="522" />
+          <mxPoint x="65" y="522" />
+          <mxPoint x="65" y="419" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label30" parent="edge5" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="295" y="541" as="geometry" />
+    </mxCell>
+    <mxCell id="label34" parent="edge5" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="295" y="541" as="geometry" />
+    </mxCell>
+    <mxCell id="label35" parent="edge5" vertex="1" connectable="0" value="statusRequestSectionRepository" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="208" y="541" as="geometry" />
+    </mxCell>
+    <mxCell id="edge1" edge="1" value="" parent="1" source="node6" target="node7" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=1.000;exitY=0.500;exitDx=0;exitDy=0;entryX=0.000;entryY=0.500;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="589" y="1308" />
+          <mxPoint x="589" y="553" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label6" parent="edge1" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="563" y="1298" as="geometry" />
+    </mxCell>
+    <mxCell id="label10" parent="edge1" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="563" y="1298" as="geometry" />
+    </mxCell>
+    <mxCell id="label11" parent="edge1" vertex="1" connectable="0" value="statusService" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="535" y="1298" as="geometry" />
+    </mxCell>
+    <mxCell id="edge3" edge="1" value="" parent="1" source="node4" target="node3" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.503;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label18" parent="edge3" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="348" y="-168" as="geometry" />
+    </mxCell>
+    <mxCell id="label22" parent="edge3" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="348" y="-168" as="geometry" />
+    </mxCell>
+    <mxCell id="label23" parent="edge3" vertex="1" connectable="0" value="dtoMapper" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="323" y="-168" as="geometry" />
+    </mxCell>
+    <mxCell id="edge9" edge="1" value="" parent="1" source="node4" target="node1" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.000;exitY=0.381;exitDx=0;exitDy=0;entryX=1.000;entryY=0.500;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label54" parent="edge9" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="79" y="94" as="geometry" />
+    </mxCell>
+    <mxCell id="label58" parent="edge9" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="79" y="94" as="geometry" />
+    </mxCell>
+    <mxCell id="label59" parent="edge9" vertex="1" connectable="0" value="entityMapper" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="28" y="94" as="geometry" />
+    </mxCell>
+    <mxCell id="edge4" edge="1" value="" parent="1" source="node4" target="node2" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=1.000;exitY=0.297;exitDx=0;exitDy=0;entryX=0.000;entryY=0.500;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label24" parent="edge4" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="615" y="39" as="geometry" />
+    </mxCell>
+    <mxCell id="label28" parent="edge4" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="615" y="39" as="geometry" />
+    </mxCell>
+    <mxCell id="label29" parent="edge4" vertex="1" connectable="0" value="objectPermissionsService" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="566" y="39" as="geometry" />
+    </mxCell>
+    <mxCell id="edge8" edge="1" value="" parent="1" source="node4" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.370;exitY=1.000;exitDx=0;exitDy=0;entryX=0.471;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label48" parent="edge8" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="280" y="510" as="geometry" />
+    </mxCell>
+    <mxCell id="label52" parent="edge8" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="280" y="510" as="geometry" />
+    </mxCell>
+    <mxCell id="label53" parent="edge8" vertex="1" connectable="0" value="requestService" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="242" y="510" as="geometry" />
+    </mxCell>
+    <mxCell id="edge2" edge="1" value="" parent="1" source="node4" target="node0" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=1.000;exitY=0.500;exitDx=0;exitDy=0;entryX=0.500;entryY=0.001;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="641" y="180" />
+          <mxPoint x="641" y="873" />
+          <mxPoint x="787" y="873" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label12" parent="edge2" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="615" y="171" as="geometry" />
+    </mxCell>
+    <mxCell id="label16" parent="edge2" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="615" y="171" as="geometry" />
+    </mxCell>
+    <mxCell id="label17" parent="edge2" vertex="1" connectable="0" value="statusHistoryRepository" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="558" y="171" as="geometry" />
+    </mxCell>
+    <mxCell id="edge6" edge="1" value="" parent="1" source="node4" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.000;exitY=0.500;exitDx=0;exitDy=0;entryX=1.000;entryY=0.500;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="65" y="180" />
+          <mxPoint x="65" y="419" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label36" parent="edge6" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="79" y="171" as="geometry" />
+    </mxCell>
+    <mxCell id="label40" parent="edge6" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="79" y="171" as="geometry" />
+    </mxCell>
+    <mxCell id="label41" parent="edge6" vertex="1" connectable="0" value="statusRequestSectionRepository" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-12" y="171" as="geometry" />
+    </mxCell>
+    <mxCell id="edge7" edge="1" value="" parent="1" source="node4" target="node7" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.000;entryY=0.500;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="353" y="548" />
+          <mxPoint x="589" y="548" />
+          <mxPoint x="589" y="553" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label42" parent="edge7" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="347" y="510" as="geometry" />
+    </mxCell>
+    <mxCell id="label46" parent="edge7" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="347" y="510" as="geometry" />
+    </mxCell>
+    <mxCell id="label47" parent="edge7" vertex="1" connectable="0" value="statusService" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="314" y="510" as="geometry" />
+    </mxCell>
+    <mxCell id="edge0" edge="1" value="" parent="1" source="node7" target="node0" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.000;exitY=0.191;exitDx=0;exitDy=0;entryX=0.500;entryY=0.001;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="641" y="367" />
+          <mxPoint x="641" y="873" />
+          <mxPoint x="787" y="873" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label0" parent="edge0" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="658" y="357" as="geometry" />
+    </mxCell>
+    <mxCell id="label4" parent="edge0" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="658" y="357" as="geometry" />
+    </mxCell>
+    <mxCell id="label5" parent="edge0" vertex="1" connectable="0" value="statusHistoryRepository" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="590" y="357" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

@@ -1,0 +1,113 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="none" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="node0" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PersonEntity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- gender: String&lt;br/&gt;- name: String&lt;br/&gt;- snils: String&lt;br/&gt;- factAddress: String&lt;br/&gt;- phone: String&lt;br/&gt;- email: String&lt;br/&gt;- lastName: String&lt;br/&gt;- birthday: LocalDate&lt;br/&gt;- inn: String&lt;br/&gt;- patronymic: String&lt;br/&gt;- legalAddress: String&lt;br/&gt;- firstName: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getSnils(): String&lt;br/&gt;+ getInn(): String&lt;br/&gt;+ setGender(String): void&lt;br/&gt;+ setSnils(String): void&lt;br/&gt;- preUpdate(): void&lt;br/&gt;+ getName(): String&lt;br/&gt;+ setPatronymic(String): void&lt;br/&gt;+ getPatronymic(): String&lt;br/&gt;+ setFactAddress(String): void&lt;br/&gt;+ setPhone(String): void&lt;br/&gt;- prePersist(): void&lt;br/&gt;+ getFactAddress(): String&lt;br/&gt;+ getBirthday(): LocalDate&lt;br/&gt;+ setEmail(String): void&lt;br/&gt;+ getLegalAddress(): String&lt;br/&gt;+ getPhone(): String&lt;br/&gt;+ setFirstName(String): void&lt;br/&gt;+ getGender(): String&lt;br/&gt;+ setName(String): void&lt;br/&gt;+ getFirstName(): String&lt;br/&gt;+ getEmail(): String&lt;br/&gt;- updateName(): void&lt;br/&gt;+ setInn(String): void&lt;br/&gt;+ getLastName(): String&lt;br/&gt;+ setBirthday(LocalDate): void&lt;br/&gt;+ setLegalAddress(String): void&lt;br/&gt;+ setLastName(String): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-311" y="1116" width="196" height="891" as="geometry" />
+    </mxCell>
+    <mxCell id="node2" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PersonOrganizationDTO&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- orgId: Long&lt;br/&gt;- address: String&lt;br/&gt;- authorized: Boolean&lt;br/&gt;- inn: String&lt;br/&gt;- position: String&lt;br/&gt;- id: Long&lt;br/&gt;- orgType: int&lt;br/&gt;- name: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getName(): String&lt;br/&gt;+ setInn(String): void&lt;br/&gt;+ setName(String): void&lt;br/&gt;+ setAuthorized(Boolean): void&lt;br/&gt;+ setPosition(String): void&lt;br/&gt;+ getAddress(): String&lt;br/&gt;+ getOrgType(): int&lt;br/&gt;+ getAuthorized(): Boolean&lt;br/&gt;+ getOrgId(): Long&lt;br/&gt;+ setOrgId(Long): void&lt;br/&gt;+ getId(): Long&lt;br/&gt;+ setOrgType(int): void&lt;br/&gt;+ setAddress(String): void&lt;br/&gt;+ setId(Long): void&lt;br/&gt;+ getInn(): String&lt;br/&gt;+ getPosition(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="625" y="650" width="210" height="561" as="geometry" />
+    </mxCell>
+    <mxCell id="node3" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PersonOrganizationEntity&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- orgType: int&lt;br/&gt;- person: PersonEntity&lt;br/&gt;- position: String&lt;br/&gt;- organization: OrganizationEntity&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getOrganization(): OrganizationEntity&lt;br/&gt;+ getApplicantType(): ApplicantType&lt;br/&gt;+ setApplicantType(ApplicantType): void&lt;br/&gt;+ getPerson(): PersonEntity&lt;br/&gt;+ getOrgType(): int&lt;br/&gt;+ setPerson(PersonEntity): void&lt;br/&gt;+ setOrganization(OrganizationEntity): void&lt;br/&gt;+ setOrgType(int): void&lt;br/&gt;+ getPosition(): String&lt;br/&gt;+ setPosition(String): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-344" y="719" width="261" height="341" as="geometry" />
+    </mxCell>
+    <mxCell id="node5" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PersonOrganizationService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- companyRepository: CompanyRepository&lt;br/&gt;- businessmanRepository: BusinessmanRepository&lt;br/&gt;- scriptEventListener: ScriptEventListener&lt;br/&gt;- personOrganizationRepository: PersonOrganizationRepository&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ findByPersonId(Long): List&amp;lt;PersonOrganizationEntity&amp;gt;&lt;br/&gt;+ count(Long, EntityCondition): int&lt;br/&gt;- registerListeners(): void&lt;br/&gt;+ findById(Long): PersonOrganizationEntity&lt;br/&gt;+ findOrganization(int, Long): OrganizationEntity&lt;br/&gt;+ save(PersonOrganizationEntity): PersonOrganizationEntity&lt;br/&gt;+ delete(PersonOrganizationEntity): void&lt;br/&gt;+ find(Long, EntityCondition, SortFields, LimitOffset): List&amp;lt;PersonOrganizationEntity&amp;gt;&lt;br/&gt;+ findByOrgId(Long, Long): PersonOrganizationEntity&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-249" y="235" width="483" height="319" as="geometry" />
+    </mxCell>
+    <mxCell id="node1" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- personOrganizationService: PersonOrganizationService&lt;br/&gt;- userRepository: UserRepository&lt;br/&gt;- personService: PersonService&lt;br/&gt;- entityMapper: EntityMapper&lt;br/&gt;- dtoMapper: DtoMapper&lt;br/&gt;- userDelegationService: UserDelegationService&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- fixFieldName(String): String&lt;br/&gt;- fixSort(SortFields): void&lt;br/&gt;+ me(): CurrentUserDTO&lt;br/&gt;- personOrganizationToEntity(PersonOrganizationDTO, PersonEntity): PersonOrganizationEntity&lt;br/&gt;+ profile(): UserProfileDTO&lt;br/&gt;+ createOrganizations(PersonOrganizationDTO): PersonOrganizationDTO&lt;br/&gt;- personOrganizationToDto(PersonOrganizationEntity): PersonOrganizationDTO&lt;br/&gt;- getUserOrg(Long): PersonOrganizationEntity&lt;br/&gt;+ updateProfile(UserProfileDTO): UserProfileDTO&lt;br/&gt;+ deleteOrganization(Long): void&lt;br/&gt;- getPerson(): PersonEntity&lt;br/&gt;+ updateUserProfile(UserProfileDTO): UserProfileDTO&lt;br/&gt;- fixFilter(EntityCondition): void&lt;br/&gt;+ getOrganizations(EntityCondition, SortFields, LimitOffset): ResponseListDTO&amp;lt;PersonOrganizationDTO&amp;gt;&lt;br/&gt;+ getPersonOrganizationById(Long): PersonOrganizationDTO&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-62" y="683" width="585" height="495" as="geometry" />
+    </mxCell>
+    <mxCell id="node6" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserDelegationService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- userDelegationRepository: UserDelegationRepository&lt;br/&gt;- personOrganizationService: PersonOrganizationService&lt;br/&gt;- scriptEventListener: ScriptEventListener&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getOrgIdWithActualDelegation(): List&amp;lt;Long&amp;gt;&lt;br/&gt;+ findAll(EntityCondition, SortFields, LimitOffset): List&amp;lt;UserDelegationEntity&amp;gt;&lt;br/&gt;+ countAllByUserAndOrg(EntityCondition): int&lt;br/&gt;- registerListeners(): void&lt;br/&gt;- getUserOrgIdsByPersonAndOrg(Long, Integer, Long): List&amp;lt;Long&amp;gt;&lt;br/&gt;+ create(UserDelegationEntity): UserDelegationEntity&lt;br/&gt;+ count(EntityCondition): int&lt;br/&gt;+ findPersonDelegation(Long, EntityCondition, SortFields, LimitOffset): List&amp;lt;UserDelegationEntity&amp;gt;&lt;br/&gt;+ getConditionForDelegationByPersonAndOrg(Long, Integer, Long, EntityCondition): EntityCondition&lt;br/&gt;+ getConditionForActualDelegation(EntityCondition, Integer, Long): EntityCondition&lt;br/&gt;+ findById(Long): UserDelegationEntity&lt;br/&gt;+ update(UserDelegationEntity): UserDelegationEntity&lt;br/&gt;+ delete(Long): void&lt;br/&gt;+ findActualPersonDelegation(Long, EntityCondition, SortFields, LimitOffset): List&amp;lt;UserDelegationEntity&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="276" y="224" width="487" height="407" as="geometry" />
+    </mxCell>
+    <mxCell id="node4" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UserProfileDTO&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- person: PersonDTO&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ setPerson(PersonDTO): void&lt;br/&gt;+ getPerson(): PersonDTO&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="136" y="1217" width="190" height="107" as="geometry" />
+    </mxCell>
+    <mxCell id="edge2" edge="1" value="" parent="1" source="node3" target="node0" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label12" parent="edge2" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-224" y="1065" as="geometry" />
+    </mxCell>
+    <mxCell id="label16" parent="edge2" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-224" y="1092" as="geometry" />
+    </mxCell>
+    <mxCell id="label17" parent="edge2" vertex="1" connectable="0" value="person" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-213" y="1092" as="geometry" />
+    </mxCell>
+    <mxCell id="edge0" edge="1" value="" parent="1" source="node1" target="node2" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=1.000;exitY=0.500;exitDx=0;exitDy=0;entryX=0.000;entryY=0.500;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label2" parent="edge0" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="548" y="910" as="geometry" />
+    </mxCell>
+    <mxCell id="edge1" edge="1" value="" parent="1" source="node1" target="node3" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="231" y="650" />
+          <mxPoint x="-213" y="650" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label8" parent="edge1" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-17" y="630" as="geometry" />
+    </mxCell>
+    <mxCell id="edge4" edge="1" value="" parent="1" source="node1" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.526;exitY=0.000;exitDx=0;exitDy=0;entryX=0.531;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="246" y="624" />
+          <mxPoint x="7" y="624" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label24" parent="edge4" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-4" y="611" as="geometry" />
+    </mxCell>
+    <mxCell id="label28" parent="edge4" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="-4" y="563" as="geometry" />
+    </mxCell>
+    <mxCell id="label29" parent="edge4" vertex="1" connectable="0" value="personOrganizationService" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="7" y="559" as="geometry" />
+    </mxCell>
+    <mxCell id="edge6" edge="1" value="" parent="1" source="node1" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.946;exitY=0.000;exitDx=0;exitDy=0;entryX=0.443;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label36" parent="edge6" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="492" y="684" as="geometry" />
+    </mxCell>
+    <mxCell id="label40" parent="edge6" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="492" y="613" as="geometry" />
+    </mxCell>
+    <mxCell id="label41" parent="edge6" vertex="1" connectable="0" value="userDelegationService" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="366" y="622" as="geometry" />
+    </mxCell>
+    <mxCell id="edge3" edge="1" value="" parent="1" source="node1" target="node4" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=1.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label20" parent="edge3" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="179" y="1187" as="geometry" />
+    </mxCell>
+    <mxCell id="edge5" edge="1" value="" parent="1" source="node6" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.000;exitY=0.086;exitDx=0;exitDy=0;entryX=1.000;entryY=0.076;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label30" parent="edge5" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="260" y="250" as="geometry" />
+    </mxCell>
+    <mxCell id="label34" parent="edge5" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="260" y="250" as="geometry" />
+    </mxCell>
+    <mxCell id="label35" parent="edge5" vertex="1" connectable="0" value="personOrganizationService" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="183" y="200" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
